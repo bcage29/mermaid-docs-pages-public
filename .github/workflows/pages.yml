@@ -25,9 +25,8 @@ jobs:
       - uses: actions/setup-node@v5
         with:
           node-version: 22
-      - uses: bcage29/mermaid-docs@feat/static-site-build
+      - uses: bcage29/mermaid-docs@v0
         with:
           folder: docs
-          version: file:./mermaid-docs-0.5.0.tgz
       - id: deployment
         uses: actions/deploy-pages@v5
